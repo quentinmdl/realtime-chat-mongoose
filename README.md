@@ -23,10 +23,12 @@ Then run the project with it
 # Entity
 
 Message :
+
     content: String,
     username: String,
 
 user :
+
     username: String,
 
 
