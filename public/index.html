@@ -41,9 +41,6 @@
     let form = document.querySelector('#form-chat');
     let input = document.querySelector('#input-msg');
     let messages = document.querySelector('#messages');
-    // console.log(form);
-    // console.log(input);
-    // console.log(messages);
 
     // New User
     const username = prompt("What is your username ?");
@@ -54,7 +51,7 @@
 
     // Get user connected
     socket.on("user-connected", username => {
-      console.log(username);
+      // console.log(username);
       appendMessages(`${username} is connected`);
     })
 
@@ -71,11 +68,10 @@
 
       if(msg.length) {
         msg.forEach(el => {
-          console.log(el);        
+          // console.log(el);        
           appendMessages(`${el.message.username}: ${el.message.content}`);
         });
       }
-
     });
 
     function appendMessages(msg) {

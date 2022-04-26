@@ -24,7 +24,7 @@ Then run the project with it
 
 Message :
     content: String,
-    username: Date,
+    username: String,
 
 user :
     username: String,
